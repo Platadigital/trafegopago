@@ -593,7 +593,7 @@
                     <div class="flex border-b border-slate-700 mb-4">
                         <button data-tab="strategy" class="tab-button flex-1 p-3 rounded-t-lg font-bold flex items-center justify-center gap-2 active"><i class="fa-solid fa-sitemap"></i> Estratégia de Precisão</button>
                         <button data-tab="dashboard" class="tab-button flex-1 p-3 rounded-t-lg font-bold flex items-center justify-center gap-2"><i class="fa-solid fa-chart-pie"></i> Dashboard Preditivo</button>
-                        <button data-tab="assets" class="tab-button flex-1 p-3 rounded-t-lg font-bold flex items-center justify-center gap-2"><i class="fa-solid fa-photo-film"></i> Arsenal de Criativos</button>
+                        <button data-tab="assets" class="tab-button flex-1 p-3 rounded-t-lg font-bold flex items-center justify-center gap-2"><i class="fa-solid fa-bullseye"></i> Alvos de Funil (Copia e Cola)</button>
                     </div>
                     <div>
                         <div id="strategy-pane" class="tab-pane active"></div>
@@ -643,7 +643,7 @@
         async function generateAnalyticsDashboard(product, audience, budget) {
             const prompt = `
                 Baseado no produto "${product}", no público "${audience}" e num orçamento de R$ ${budget}, forneça uma análise preditiva. Responda APENAS com um objeto JSON válido, sem markdown. O objeto deve ter a seguinte estrutura:
-                {"resumo": "Uma frase curta", "cpcEstimado": "2.50", "ctrEstimado": "1.5%", "cplEstimado": "30.00", "cpmEstimado": "15.00", "roasProjetado": "4x", "alocacaoTOFU": "60", "alocacaoMOFU": "30", "alocacaoBOFU": "10", "projecaoMes1": "100", "projecaoMes2": "150", "projecaoMes3": "220"}
+                {"resumo": "Uma frase curta", "cpcEstimado": "2.50", "ctrEstimado": "1.5%", "cplEstimado": "30.00", "cpmEstimado": "15.00", "roasProjetado": "4x", "alocacaoTOFU": "60", "alocacaoMOFU": "30", "alocacaoBOFU": "10"}
             `;
 
             try {
